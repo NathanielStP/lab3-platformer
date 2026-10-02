@@ -95,16 +95,25 @@ Run Project: **F5** (**Cmd+B** on Mac) · Run Current Scene: **F6** (**Cmd+R**) 
 
 > [List your states and, in a sentence, what each one owns. If you added a
 > state beyond the required three, say what made it earn its keep.]
+i have an air, wall, idle, and run state. run state has the player moving
+air determines gravity pulling you down. idle helps you wait, wall allows 
+extra jumps
 
 **My custom feature(s):**
 
 > [What did you add or change to make it yours? A sentence or two each.]
+i added the wall state to allow wall jumping
 
 **My layer map:**
 
 > [In one or two sentences: which layers exist in your game, and who masks
 > whom? Explaining this is part of the lab.]
+there is a world layer, player layer, hazard layer, and goal layer.
+each item is in it's own layer and all mask the player
 
 **One thing that surprised me:**
 
 > [A bug, a behavior, a Godot thing. What did you not expect?]
+
+i was surprised that there were so many bugs adding the wall state,
+i had to add more parameters to ensure the player was in the right state

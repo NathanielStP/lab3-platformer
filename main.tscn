@@ -1,7 +1,15 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://gro7d4h3646"]
 
+[ext_resource type="Script" uid="uid://hmgashf0w82q" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="PackedScene" path="res://level.tscn" id="1_main"]
+[ext_resource type="PackedScene" uid="uid://dk6kebsslg5g8" path="res://player.tscn" id="2_0xm2m"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=405878341]
+script = ExtResource("1_h2yge")
 
-[node name="Level" parent="." instance=ExtResource("1_main")]
+[node name="Level" parent="." unique_id=1686433754 instance=ExtResource("1_main")]
+
+[node name="Player" parent="." unique_id=2143996739 instance=ExtResource("2_0xm2m")]
+position = Vector2(100, 500)
+speed = 250.0
+gravity = 1200.0
